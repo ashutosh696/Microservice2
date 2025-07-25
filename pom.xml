@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ashu</groupId>
-	<artifactId>Microservice1</artifactId>
+	<artifactId>Microservice2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Microservice1</name>
 	<description>Microservice project for Spring Boot</description>
