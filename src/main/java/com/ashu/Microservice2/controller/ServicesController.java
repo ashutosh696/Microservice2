@@ -13,8 +13,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/services")
 public class ServicesController {
-    @Value("${server.port}")
-    String port;
+  /*  @Value("${server.port}")
+    String port;*/
 
     private static final List<Services> Services = List.of(
             new Services(1, "X-Ray", 500),
@@ -28,7 +28,7 @@ public class ServicesController {
 
     @GetMapping("/{id}")
     public Services getById(@PathVariable int id) {
-        System.out.println("In services MS running on port: "+port);
+     //   System.out.println("In services MS running on port: "+port);
         return Services.stream()
                 .filter(s -> s.getId() == id)
                 .findFirst()
